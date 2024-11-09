@@ -1,0 +1,30 @@
+.food-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .food-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 688px) {
+  .food-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.instructions-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.chatbot-instructions-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
